@@ -6,7 +6,7 @@ define([
     'require',
     'angular',
     'app',
-    'routes'
+    'routes',
 ], function (require, ng) {
     'use strict';
 
@@ -16,6 +16,6 @@ define([
      */
 
     require(['domReady!'], function (document) {
-        ng.bootstrap(document, ['app']);
+        ng.bootstrap(document, ['app', 'emailParser']);
     });
 });
