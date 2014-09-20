@@ -15,8 +15,6 @@ define([
             'ngRoute'])
         .config(['$interpolateProvider',
             function($interpolateProvider) {
-                $interpolateProvider.startSymbol('__');
-                $interpolateProvider.endSymbol('__');
         }])
         .factory('emailParser',['$interpolate',function($interpolate){
             return{
