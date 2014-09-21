@@ -4,7 +4,7 @@ define(['./module'], function(directives){
         return {
             require: 'ngModel',
             link:function(scope,ele, attrs , c){
-                scope.$watch(atts.ngModel, function(){
+                scope.$watch(attrs.ngModel, function(){
                     $http({
                         method:'POST',
                         url:'/api/check'+attrs.ensureUnique,

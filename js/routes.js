@@ -23,6 +23,10 @@ define(['./app'], function (app) {
             templateUrl:'partials/demo.html',
             controller: 'DemoController'
         });
+        $routeProvider.when('/form',{
+            templateUrl:'partials/form.html',
+            controller: 'DemoController'
+        })
 
         $routeProvider.otherwise({
             redirectTo: '/view1'
